@@ -1,4 +1,5 @@
 # HTML-CSS-Javascript-Projects
  
 <h3 id="sts">Portfolio</h3>
-<p>This project uses <strong>html</strong>, <strong>css</strong> and some <strong>javascript</strong>. The project has a slideshow, image effects, hover effects, fade effects and animation effects.
+<p>This project uses <strong>html</strong>, <strong>css</strong> and some <strong>javascript</strong>. The project has a slideshow, image effects, hover effects, fade effects and animation effects.</p>
+<p>The project is live at http://catharinavanveen.com.</p>
