@@ -75,6 +75,7 @@ body.fade-out {
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
+  background-color: darkgreen;
   display: none;
   position: absolute;
   top: 3.2vw;
