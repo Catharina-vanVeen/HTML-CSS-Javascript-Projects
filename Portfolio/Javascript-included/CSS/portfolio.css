@@ -41,8 +41,7 @@ body.fade-out {
   letter-spacing: .2vw;
   text-align: center;
   position: relative; /* Is this needed for the animation?*/
-  animation: moveNavText 5.75s;
-  -webkit-animation: moveNavText 5.75s;
+
 }
 
 @keyframes moveNav {
@@ -50,10 +49,7 @@ body.fade-out {
   to {left: 0vw;}
 }
 
-@keyframes moveNavText {
-  from {top: -100vw;}
-  to {top: 0vw;}
-}
+
 
 @keyframes moveVideoText {
   from {top: -100vw;}
@@ -81,12 +77,17 @@ body.fade-out {
 .dropdown-content {
   display: none;
   position: absolute;
-  min-width: 160px;
+  top: 3.2vw;
+  min-width: 17vw;
   z-index: 1;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
+
+.dropdown-content a {
+  display: block;
+}
 
 #HomeVideo {
   position: fixed;
