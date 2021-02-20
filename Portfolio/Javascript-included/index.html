@@ -13,18 +13,27 @@
 
 <!-- NAVBAR -->
   <div class="Navbar">
-    <a class="Active" href="#Home">Home</a>
-    <a href="#About">About</a>
-    <a href="#GitHub">GitHub</a>
-	<a href="https://www.linkedin.com/in/catharinavanveen/" target="_blank">LinkedIn</a>
-	<a href="Resources/Resume-Catharina-van-Veen-Software-Developer.pdf" target="_blank">Resume</a>
-    <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
+    <div class="menu-item"><a class="Active" href="#Home">Home</a></div>
+    <div class="menu-item"><a href="#About">About</a></div>
+    <div class="menu-item"><a href="#GitHub">GitHub</a></div>
+    <div class="dropdown menu-item">
+      <a href="#">Projects/GitHub</a>
+      <div class="dropdown-content">
+        <a href="#">Classical Music</a>
+        <a href="#">Theater Vertigo</a>
+        <a href="#">Mount Rainier</a>
+        <a href="#">Other Projects</a>
+      </div>
+    </div> 
+	  <div class="menu-item"><a href="https://www.linkedin.com/in/catharinavanveen/" target="_blank">LinkedIn</a></div>
+    <div class="menu-item"><a href="Resources/Resume-Catharina-van-Veen-Software-Developer.pdf" target="_blank">Resume</a></div>
+    <div class="menu-item"><a onclick="openForm()" ondblclick="closeForm()">Contact</a></div>
   </div>
 
 <!-- HOME -->
   <div id="Home">
     <br><!-- Breaks inserted to add space between navbar and first heading -->
-    <br>
+
   </div>
   
 <!-- VIDEO -->
@@ -49,46 +58,38 @@
     </p>
   </div>
 
-<!-- SLIDESHOW -->
-
-  
+<!-- ABOUT -->
 <!-- ABOUT -->
   <div class="Row " id="About">
-    <div class="Column2 Row1">
+    <div class="ColumnDark Row1">
       <div id="SlidesContainer">
 
         <div class="MySlides fade">
-          <div class="SlideNumber">1 / 6</div>
           <img class="SlideImage" src="media/images/Myself.jpg" >
           <div class="SlideText">I am available to work on your project!</div>
         </div>
 
         <div class="MySlides fade">
-          <div class="SlideNumber">2 / 6</div>
           <img class="SlideImage" src="media/images/HTML_CSS_and_JavaScript.jpeg" >
           <div class="SlideText">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
         </div>
 
         <div class="MySlides fade">
-          <div class="SlideNumber">3 / 6</div>
           <img class="SlideImage" src="media/images/Python.png" >
           <div class="SlideText">the popular programming language Python,</div>
         </div>
 
         <div class="MySlides fade">
-          <div class="SlideNumber">4 / 6</div>
           <img class="SlideImage" src="media/images/C_Sharp_and_Dot_NET.png" >
           <div class="SlideText">C#, .NET Framework, ASP.NET, MVC,</div>
         </div>
 
         <div class="MySlides fade">
-          <div class="SlideNumber">5 / 6</div>
           <img class="SlideImage" src="media/images/SQL_and_Database.jpg" >
           <div class="SlideText">back end development, databases and SQL.</div>
         </div>
 
         <div class="MySlides fade">
-          <div class="SlideNumber">6 / 6</div>
           <img class="SlideImage" src="media/images/contact.jpg" >
           <div class="SlideText"><a onclick="openForm()">Contact me now!</a></div>
         </div>
@@ -107,31 +108,62 @@
         <span class="Dot" onclick="currentSlide(6)"></span>
       </div>
   </div>
-    <div class="Column1 Row1">
+    <div class="ColumnLight Row1">
       <h2>About</h2>
       <p>I am a software developer who loves to code! My greatest strength is being creative with the materials and tools I have available to solve problems and bring solutions. I enjoy learning and researching, and I find what I need to get the job done.<br>
-        <br>I will be a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and python. <br>
+        <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp and Data Science Boot Camp. I am trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C#, python and R.<br>
         <br>I am a full-stack developer and would love to join your team as a junior developer or work with you on your project. <a onclick="openForm()">Contact</a> me below!</p>
     </div>
   </div>
 
-<!-- GITHUB -->
-  <div class="Row " id="GitHub">
-    <div class="Column1 Row2">
-      <h2>GitHub</h2>
-      <p><a href="https://github.com/Catharina-vanVeen/Python-Projects/tree/main/Classical_Music" target="_blank">Classical Music</a>: A Python web app to keep track of classical cd's, compositions, and musicians in a relational database. The app utilized Django, a MVT Framework for full CRUD functionality to a SQL database. I used Bootstrap 4 for the front end. I utilized an API of MusicBrainz.com and web scraping (Beautiful Soup) to retrieve information that the user can add to the database. I created a REST API to connect to the database.
-		<br><a href="https://github.com/Catharina-vanVeen/Python-Projects/tree/main/Student%20tracking%20system" target="_blank">Student Tracking System</a>: Python project that uses the tkinter module and the SQLite relational database.
-		<br><a href="https://github.com/Catharina-vanVeen/Basic-C-Sharp-Projects/tree/main/BlackJack" target="_blank">Blackjack</a>: A C# .NET console game using the custom-made Casino library
-		<br><a href="https://github.com/Catharina-vanVeen/Basic-C-Sharp-Projects/tree/main/CarInsurance" target="_blank">Car Insurance</a>: A C# .NET MVC web application using Entity Framework.
-		<br><a href="https://github.com/Catharina-vanVeen/HTML-CSS-Javascript-Projects/tree/main/Portfolio/Javascript-included" target="_blank">This portfolio web page</a>
-		<br><br><center><a href="https://github.com/Catharina-vanVeen" target="_blank" id="github-link">github.com/Catharina-vanVeen</a></center>
-	  </p>
-	  
-    </div>
-    <div class="Column2 Row2">
-      <a href="https://github.com/Catharina-vanVeen" target="_blank"><img src="media/images/GitHub.png" alt=""></a>
-    </div>
+<!-- CLASSICAL MUSIC -->
+<div class="Row " id="ClassicalMusic">
+  <div class="ColumnLight RowCM">
+    <h2>Classical Music</h2>
+    <p>A Python web app to keep track of classical cd's, compositions, and musicians in a relational database. The app utilized Django, a MVT Framework for full CRUD functionality to a SQL database. I used Bootstrap 4 for the front end. I utilized an API of MusicBrainz.com and web scraping (Beautiful Soup) to retrieve information that the user can add to the database. I created a REST API to connect to the database. <a href="https://github.com/Catharina-vanVeen/Python-Django" target="_blank">GitHub</a></p>
   </div>
+  <div class="ColumnDark RowCM">
+    <a href="https://github.com/Catharina-vanVeen/Python-Django" target="_blank"><img src="media/images/music.jpg" alt=""></a>
+  </div>
+</div>
+
+<!-- THEATER VERTIGO -->
+<div class="Row " id="Theater">
+  <div class="ColumnDark RowTheater">
+    <a href="https://github.com/Catharina-vanVeen/C-sharp-ASP.NET-MVC" target="_blank"><img src="media/images/Mormon.PNG" alt=""></a>
+  </div>
+  <div class="ColumnLight RowTheater">
+    <h2>Theater Vertigo</h2>
+    <p>I worked with a team of colleagues on developing a full-scale C# (ASP.NET MVC) web application for a theater group. The website keeps track of productions, cast members, subscribers etc. I added features, either by modifying pre-existing code or writing new code. I also made several suggestions for improving the database structure. I worked on back-end and front-end, using C#, JavaScript, jQuery, Ajax, HTML and CSS.<a href="https://github.com/Catharina-vanVeen/C-sharp-ASP.NET-MVC" target="_blank">GitHub</a></p>
+  </div>
+</div>
+
+<!-- DATA SCIENCE -->
+<div class="Row " id="DataScience">
+  <div class="ColumnLight RowDS">
+    <h2>Data Science</h2>
+    <p>Using python and Jupyter Notebook, performed data analysis and created reports. Included data analysis, data wrangling, statistical analysis, and data visualizations. Worked with a time series, analyzing trend and seasonality. Performed Linear Regression Analyses and Two-way ANOVA tests. Utilized Machine Learning for prediction using Linear and non-Linear Regression, and for Clustering using K-prototypes Clustering for Mixed Categorical and Numerical data. <a href="https://github.com/Catharina-vanVeen/Data-Science/tree/main/Mount%20Rainier" target="_blank">GitHub</a></p>
+  </div>
+  <div class="ColumnDark RowDS">
+    <a href="https://github.com/Catharina-vanVeen/Data-Science/tree/main/Mount%20Rainier" target="_blank"><img src="media/images/DataScience.png" alt=""></a>
+  </div>
+</div>
+
+<!-- GITHUB -->
+<div class="Row " id="GitHub">
+  <div class="ColumnDark RowGH">
+    <a href="https://github.com/Catharina-vanVeen" target="_blank"><img src="media/images/GitHub.png" alt=""></a>
+  </div>
+  <div class="ColumnLight RowGH">
+    <h2>Other Projects</h2>
+    <p><a href="https://github.com/Catharina-vanVeen/Python-Projects/tree/main/Student%20tracking%20system" target="_blank">Student Tracking System</a>: Python project that uses the tkinter module and the SQLite relational database.</p>
+    <p><a href="https://github.com/Catharina-vanVeen/Basic-C-Sharp-Projects/tree/main/BlackJack" target="_blank">Blackjack</a>: A C# .NET console game using the custom-made Casino library.</p>
+    <p><a href="https://github.com/Catharina-vanVeen/HTML-CSS-Javascript-Projects/tree/main/Portfolio/Javascript-included" target="_blank">This portfolio web page</a></p>
+    <p>  
+      <br><br><center><a href="https://github.com/Catharina-vanVeen" target="_blank" id="github-link">github.com/Catharina-vanVeen</a></center>
+    </p>
+  </div>
+</div>
 
 
 <!-- CONTACT -->

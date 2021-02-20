@@ -72,6 +72,21 @@ body.fade-out {
 .Navbar a.Active {
   background-color: rgb(1, 156 ,1);
 }
+.menu-item {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
 
 #HomeVideo {
   position: fixed;
@@ -216,17 +231,17 @@ body.fade-out {
   animation: fade 1.5s;
 }
 
-.Column1, .Column2 {
+.ColumnLight, .ColumnDark {
   float: left;
   width: 50%;
   padding: 1.6%;
 }
 
-.Column1 {
+.ColumnLight {
   background-color: white;
 }
 
-.Column2 {
+.ColumnDark {
   background-color: darkgreen;
   position: relative;
 }
@@ -235,8 +250,17 @@ body.fade-out {
   height: 38vw;
 }
 
-.Row2 {
-  height: 40vw;
+.RowCM {
+  height: 33vw;
+}
+.RowTheater {
+  height: 22vw;
+}
+.RowDS {
+  height: 30vw;
+}
+.RowGH {
+  height: 35vw;
 }
 
 .Row:after {
@@ -291,6 +315,7 @@ q {
 
 img {
   filter: sepia(100%) hue-rotate(90deg);
+  background-color: white;
   border-radius: 8px;
   display: block;
   max-width: 90%;
